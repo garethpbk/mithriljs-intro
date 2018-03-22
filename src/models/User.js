@@ -17,6 +17,7 @@ var User = {
 
   current: {},
   new: {},
+  toDelete: {},
   load: function(id) {
     return m
       .request({
@@ -39,15 +40,24 @@ var User = {
   },
 
   add: function() {
+    m.request({
+      method: "POST",
+      url: "https://rem-rest-api.herokuapp.com/api/users/",
+      data: User.new,
+      withCredentials: true
+    });
+  },
+
+  delete: function() {
     m
       .request({
-        method: "POST",
-        url: "https://rem-rest-api.herokuapp.com/api/users/",
-        data: User.new,
+        method: "DELETE",
+        url: "https://rem-rest-api.herokuapp.com/api/users/" + User.toDelete.id,
+        data: User.toDelete,
         withCredentials: true
       })
-      .then(function(result) {
-        User.loadList;
+      .then(function() {
+        console.log("User " + User.toDelete.id + " deleted!");
       });
   }
 };

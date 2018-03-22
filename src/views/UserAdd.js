@@ -8,7 +8,6 @@ module.exports = {
       {
         onsubmit: function(e) {
           e.preventDefault();
-          console.log(User.new);
           User.add();
         }
       },

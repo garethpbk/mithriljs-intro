@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/garethpbk/startnow-node101-express-server.git"
+    "url": "git+https://github.com/garethpbk/mithriljs-intro.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/garethpbk/startnow-node101-express-server/issues"
+    "url": "https://github.com/garethpbk/mithriljs-intro/issues"
   },
-  "homepage": "https://github.com/garethpbk/startnow-node101-express-server#readme"
+  "homepage": "https://github.com/garethpbk/mithriljs-intro#readme"
 }
